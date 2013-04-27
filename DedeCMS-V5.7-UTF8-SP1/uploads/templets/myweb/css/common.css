@@ -1,0 +1,85 @@
+@charset "utf-8";
+body{ font: 12px/18px "Microsoft YaHei", tahoma, arial, simsun, sans-serif;}
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, button, textarea, p, blockquote, th, td { margin: 0; padding: 0;}
+ul,ol,dl,li{list-style:none;}
+a {cursor:pointer; text-decoration:none;}
+fieldset,img{ border:0; margin: 0; padding: 0;}
+table{ border-collapse:collapse;border-spacing:0;}
+input,button,select,textarea{outline:none}
+textarea{resize:none}
+input, img, select { vertical-align:middle; }
+.fn_clear:after { content:" "; clear:both; display:block; font-size:0; height:0; visibility:hidden;}
+.clr {display: block; overflow: hidden;	clear: both; height: 0;	line-height: 0;	font-size: 0;}
+.fn_clear { zoom:1; /* for IE6 IE7 */}
+.fl, .fr { display:inline;}
+.fl { float:left;}
+.fr { float:right;}
+.a_blue { color:#03539e;}
+/* 页头 */
+.top_bar { background-color:#ebebeb; height:30px; line-height:30px; width:100%;}
+.top_bar_wrap { color:#555555; margin:0 auto; width:1000px;}
+.top_bar_wrap .top_menu { float:right;}
+.top_bar_wrap .top_menu a { color:#555555; padding:0 5px;}
+.header { width:100%;}
+.header_wrap { background: url(../images/header_bg.png) 0 0 no-repeat; position: relative; height: 120px; margin: 0 auto; width:1000px;}
+.header_wrap h1 { overflow: hidden; float: left; padding:15px 0 0 5px;}
+.header_wrap h1 a {background-image: url(../images/logo.png); display: block; height: 100px;text-indent: -9999px; width: 175px;}
+.header_wrap .main_search { left:440px; top:35px; height:60px; position:absolute; width:350px;}
+.main_search .form { height: 32px;}
+.main_search input { margin: 0; padding: 0; height: 32px; border: none;}
+.main_search .text { border:1px solid #c6c6c6; background-color: #fff; line-height: 20px; height: 20px; padding: 5px; width: 250px;}
+.main_search .button { background:url(../images/icon_btn.png) 0 -30px no-repeat; color: #ffffff; cursor: pointer; font: 500 14px/32px "Microsoft YaHei"; width: 62px;}
+.hotwords { color: #919191; height: 18px; margin-top:8px; overflow: hidden;}
+.hotwords span, .hotwords strong { display:inline; float: left; font-weight: normal;}
+.hotwords a:link, .hotwords a:visited { float: left; margin-right: 10px; color: #919191;}
+.hotwords a:hover, .hotwords a:active { color: #2371b7;}
+
+.wrapper { clear:both; margin:0 auto; overflow:hidden; width:1000px; zoom:1;}
+/* nav start */
+.nav{ position:relative; background:url(../images/nav_bg.png) repeat-x; height:42px;}
+.nav_left_side{ position:absolute; left:0px; top:0px; background:url(../images/nav_left.png) no-repeat 0px 0px; width:7px; height:42px; _overflow:hidden; }
+.nav_right_side{ position:absolute; right:0px; top:0px; background:url(../images/nav_right.png) no-repeat 0 0px; width:7px; height:42px; _overflow:hidden; }
+.nav_items{ margin:0 0 0 13px; height:40px; clear:both; overflow:hidden;}
+.nav_items a { color:#ffffff; margin-right:13px; height:40px; line-height:40px;}
+/* nav end */
+/* mainnav start */
+.main_nav { background:url(../images/mainnavbg.png) 8px 50px no-repeat #f6f6f4; border-bottom:2px solid #1492cb; margin-bottom:10px; height:180px; padding:12px 0;}
+.main_nav_con { margin-left:45px; border-left:2px solid #1492cc; height:180px;}
+.main_nav_con dl { display:inline; margin:0 0 5px 15px; float:left; height:26px; width:460px;}
+.main_nav_con dt { float: left; width: 90px;}
+.main_nav_con dt a { background:url(../images/icon_btn.png) 0 0 no-repeat; color:#000000; display:block; height:26px; line-height:26px; font-size:14px; text-align:center; width: 90px;}
+.main_nav_con dd { float: left; width: 360px; height:26px; overflow: hidden; padding:0 0 0 10px;}
+.main_nav_con dd a { color:#2371b7; float:left; line-height: 26px; margin: 0 8px 0 0;}
+/* mainnav end */
+.adspace { margin-bottom:10px;}
+.main_left {float:left; width:300px;}
+.main_right { float:right; width:690px;}
+.mod { border:1px solid #13c6ff; background-color:#f6f6f4; margin-bottom: 10px; overflow:hidden; position:relative;zoom:1;}
+.mod.s1 { height:265px;}
+.mod.s2 { height:390px;}
+.mod .title { background-color:#caecf6; border-bottom: 1px solid #13c6ff; font: 700 14px/30px "微软雅黑"; height: 30px; padding:0 12px; position:relative;}
+.mod .title strong { font: 700 14px/30px "微软雅黑"; float: left;}
+.mod .title .blue { color:#118ece;}
+.mod .title .more { color:#03539c; float: right; font-size:12px;}
+.mod .title .hot { background:url(../images/icon.png) 0 -40px no-repeat; display:inline; float:left; margin:5px 5px 0 -12px; height:20px; width:40px; }
+.title_sub {overflow: hidden; left:0; position:absolute; top:0;}
+.title_sub li {float: left; border-right: 1px solid #13c6ff; line-height:30px; text-align:center; overflow:hidden; width:90px;}
+.title_sub li.cur { background-color:#f6f6f4; height:31px;}
+.title_sub li a { color:#03539c;}
+.title_sub li.cur a { color:#252523;}
+.mod .mod_con { clear:both; overflow:hidden; padding:10px;}
+.imgtxt{ margin-bottom:5px; height:75px;}
+.imgtxt .imgArea{ float:left; display:inline; height:70px; border:1px solid #e5e5e5; width:115px;}
+.imgtxt .imgArea img{ width:115px; height:70px;}
+.imgtxt .txtArea{ display:inline; float:left; margin-left:11px; height:70px; overflow:hidden; width:150px;}
+.imgtxt .txtArea p{ font-size:12px; line-height:23px; text-indent: 2em}
+.imgtxt .txtArea a{ color:#03539c;}
+.mod_list { clear:both;}
+.mod_list li { background:url(../images/list_style.png) 0 8px no-repeat; height: 22px; overflow: hidden; line-height:22px;padding-left:18px;}
+.mod_list li a { color:#545454;}
+/* footer */
+.friend_link { border:1px solid #13c6ff; background-color:#f6f6f4; margin:0 auto 10px; padding:10px; line-height:25px;}
+.friend_link a { color:#04539e; height: 15px; line-height: 15px; margin: 0 4px 5px 0; white-space: nowrap; padding-left: 5px;}
+.footer { border-top:7px solid #118ece; padding-top:15px; margin: 0px auto; overflow: hidden; width: 1000px;}
+.footer p{ color:#5b5b5b; line-height:25px; text-align:center;}
+.footer p a{ color:#5b5b5b; margin-left:4px; margin-right:4px;}
