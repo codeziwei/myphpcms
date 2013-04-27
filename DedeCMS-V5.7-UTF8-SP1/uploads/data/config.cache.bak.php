@@ -1,12 +1,12 @@
 <?php
-$cfg_basehost = 'http://localhost:8091';
+$cfg_basehost = 'http://192.168.1.5:8091';
 $cfg_cmspath = '';
-$cfg_cookie_encode = 'PbWQb6948S';
+$cfg_cookie_encode = 'HuOZx5039H';
 $cfg_indexurl = '/';
 $cfg_backup_dir = 'backupdata';
 $cfg_indexname = '主页';
 $cfg_webname = '我的网站';
-$cfg_adminemail = '913257456@qq.com';
+$cfg_adminemail = 'admin@dedecms.com';
 $cfg_html_editor = 'ckeditor';
 $cfg_arcdir = '/a';
 $cfg_medias_dir = '/uploads';
