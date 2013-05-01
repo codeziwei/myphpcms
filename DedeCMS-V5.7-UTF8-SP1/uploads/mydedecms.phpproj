@@ -10550,6 +10550,66 @@
     {
     "ProjRelPath" = "T"
     }
+    "templets\\myweb"
+    {
+    "ProjRelPath" = "T"
+    }
+    "templets\\myweb\\article_article.htm"
+    {
+    "ProjRelPath" = "T"
+    }
+    "templets\\myweb\\article_shop.htm"
+    {
+    "ProjRelPath" = "T"
+    }
+    "templets\\myweb\\content_aboutus.htm"
+    {
+    "ProjRelPath" = "T"
+    }
+    "templets\\myweb\\footer.htm"
+    {
+    "ProjRelPath" = "T"
+    }
+    "templets\\myweb\\head.htm"
+    {
+    "ProjRelPath" = "T"
+    }
+    "templets\\myweb\\index.htm"
+    {
+    "ProjRelPath" = "T"
+    }
+    "templets\\myweb\\index_shop.htm"
+    {
+    "ProjRelPath" = "T"
+    }
+    "templets\\myweb\\list_article.htm"
+    {
+    "ProjRelPath" = "T"
+    }
+    "templets\\myweb\\list_shop.htm"
+    {
+    "ProjRelPath" = "T"
+    }
+    "templets\\myweb\\position.htm"
+    {
+    "ProjRelPath" = "T"
+    }
+    "templets\\myweb\\product.htm"
+    {
+    "ProjRelPath" = "T"
+    }
+    "templets\\myweb\\product_left.htm"
+    {
+    "ProjRelPath" = "T"
+    }
+    "templets\\myweb\\product_list1.htm"
+    {
+    "ProjRelPath" = "T"
+    }
+    "templets\\myweb\\product_list2.html"
+    {
+    "ProjRelPath" = "T"
+    }
     "templets\\plus"
     {
     "ProjRelPath" = "T"

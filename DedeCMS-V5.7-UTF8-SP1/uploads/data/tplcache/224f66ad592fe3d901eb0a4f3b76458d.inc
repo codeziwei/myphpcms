@@ -1,0 +1,1 @@
+<li><a class="pic" href="[field:arcurl/]" title="[field:title function='html2text(@me)' /]"><img src="[field:litpic/]" alt="[field:title function='html2text(@me)'/]"/><span class="countdown">休闲西服01</span></a></li>

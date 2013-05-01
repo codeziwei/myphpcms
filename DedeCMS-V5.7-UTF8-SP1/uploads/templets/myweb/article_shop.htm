@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>产品详情</title>
+ <link href="/templets/myweb/css/common.css" rel="stylesheet" type="text/css" />
+    <link href="/templets/myweb/css/index.css" rel="stylesheet" type="text/css" />
+    <link href="/templets/myweb/css/style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+{dede:include filename="head.htm"/}	
+<div class="wrapper">
+    {dede:include filename="product_left.htm"/}	
+	<div class="main_right">
+	    <div class="mod">
+            <div class="title"><strong>{dede:field name='title'/}</strong> </div>
+	        <div class="mod_con">
+			    <div class="det_img"><img src="{dede:field.litpic/}" border="0" style="height:275px;width:345px" /></div>
+                <div class="det_right">
+                    <p>&nbsp;</p>
+                    <p>产品编号：{dede:field name='title'/}</p>
+                    <p>人气： <script src="{dede:field name='phpurl'/}/count.php?view=yes&aid={dede:field name='id'/}&mid={dede:field name='mid'/}" type='text/javascript' language="javascript"></script></p>
+                    <p>面料成分： 定制　　　       色系： 定制</p>
+                    <p>状态： 定制</p>
+                    <p>价格：{dede:field.trueprice/}元/件</p>
+					<p class="btn"><input class="btn_dingzhi" name="" type="button" /><input class="btn_zixun" name="" type="button" /></p>
+                </div>
+	        </div>
+		</div>
+	    <div class="mod2">
+	        <ul class="tab">
+                <li class="cur"><a href="#">商品介绍</a></li>
+	            <li><a href="#">客户案例</a></li>
+	            <li><a href="#">企业定制</a></li>
+	            <li><a href="#">服装尺寸</a></li>
+	            <li><a href="#">洗涤保养</a></li>
+	            <li><a href="#">售后服务</a></li>
+            </ul>
+	        <div class="mod_con detail_con">
+	            {dede:field.body/}
+            </div>
+		</div>
+	</div>
+</div>
+{dede:include filename="footer.htm"/}
+</body>
+</html>
