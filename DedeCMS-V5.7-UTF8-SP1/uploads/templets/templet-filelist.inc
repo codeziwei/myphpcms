@@ -34,7 +34,7 @@ list_image.htm,默认图片列表模板
 list_soft.htm,默认软件列表模板
 list_infos.htm,分类信息列表模板
 list_spec.htm,默认专题列表模板
-list_shop.htm,默认商城列表模板 
+list_shop.htm,默认商城列表模板（小分类列表）
 footer.htm,列表页底部模板
 googlemap.htm,google地图模板
 search.htm,普通搜索模板
@@ -42,3 +42,6 @@ advancedsearch.htm,高级搜索模板
 singlepage.htm,单独页面模板
 tag.htm,标签首页模板
 taglist.htm,特定标签内容列表模板
+content_aboutus.htm,自定义一般文章内容模板
+product_list1.htm,大分类列表页
+product_left.htm,产品左侧

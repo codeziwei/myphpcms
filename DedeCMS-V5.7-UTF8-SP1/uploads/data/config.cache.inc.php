@@ -1,5 +1,5 @@
 <?php
-$cfg_basehost = 'http://localhost:8091';
+$cfg_basehost = 'http://192.168.1.5:8091';
 $cfg_cmspath = '';
 $cfg_cookie_encode = 'PbWQb6948S';
 $cfg_indexurl = '/';

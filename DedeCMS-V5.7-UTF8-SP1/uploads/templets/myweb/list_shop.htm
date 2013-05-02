@@ -2,146 +2,52 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>小分类</title>
+    <title>{dede:field.typename/}</title>
     <link href="/templets/myweb/css/common.css" rel="stylesheet" type="text/css" />
     <link href="/templets/myweb/css/index.css" rel="stylesheet" type="text/css" />
     <link href="/templets/myweb/css/style.css" rel="stylesheet" type="text/css" />
-
 </head>
 <body>
-    {dede:include filename="head.htm"/}	
+    {dede:include filename="head.htm"/}
     <div class="wrapper">
-        {dede:include filename="product_left.htm"/}	
+        {dede:include filename="product_left.htm"/}
         <div class="main_right">
             <div class="mod">
-                <div class="title"><strong>马甲</strong></div>
+                <div class="title">
+                    <strong>{dede:field.typename/}</strong></div>
                 <div class="mod_con">
                     <ul class="pro_list">
-
-
+                        <!--小分类 begin-->
                         {dede:list pagesize='10'}
-				<li>
-
-                     <div class="proleftbox">
-                                <img src="[field:litpic/]"  width="255" height="175" />
-                            </div>
-                            <div class="rightinfo">
-                                <p class="tit"><a href="[field:arcurl /]">[field:title/]</a></p>
-                                <p class="action"><a class="rate" href="#"><s></s>好评： [field:scores/]</a><a class="popularity" href="#"><s></s>人气：[field:click/]</a></p>
-                                <p>价格：[field:trueprice/]元</p>
-                                <p class="pre">详情： [field:description/]</p>
-                            </div>
-				</li>
-	{/dede:list}
-
-
-
-
-
-
-
                         <li>
                             <div class="proleftbox">
-                                <img src="images/img_list02.png" width="255" height="175" />
+                                <img src="[field:litpic/]" width="255" height="175" />
                             </div>
                             <div class="rightinfo">
-                                <p class="tit"><a href="#">马甲A001-01</a></p>
-                                <p class="action"><a class="rate" href="#"><s></s>好评： 152</a><a class="popularity" href="#"><s></s>人气： 10000</a></p>
-                                <p>价格：100元</p>
-                                <p class="pre">详情：2010年全新雅致条纹休闲西服，给时尚优雅的您全新的舒适体验，提升魅力指数，是商务休闲兼具的款式。采用98%高质棉+2%氨纶面料，手感柔软且挺括有型... ...</p>
+                                <p class="tit">
+                                    <a href="[field:arcurl /]">[field:title/]</a></p>
+                                <p class="action">
+                                    <a class="rate" href="#"><s></s>好评： [field:scores/]</a><a class="popularity" href="#"><s></s>人气：[field:click/]</a></p>
+                                <p>
+                                    价格：[field:trueprice/]元</p>
+                                <p class="pre">
+                                    详情： [field:description/]</p>
                             </div>
                         </li>
-                        <li>
-                            <div class="proleftbox">
-                                <img src="images/img_list02.png" width="255" height="175" />
-                            </div>
-                            <div class="rightinfo">
-                                <p class="tit"><a href="#">马甲A001-01</a></p>
-                                <p class="action"><a class="rate" href="#"><s></s>好评： 152</a><a class="popularity" href="#"><s></s>人气： 10000</a></p>
-                                <p>价格：100元</p>
-                                <p class="pre">详情：2010年全新雅致条纹休闲西服，给时尚优雅的您全新的舒适体验，提升魅力指数，是商务休闲兼具的款式。采用98%高质棉+2%氨纶面料，手感柔软且挺括有型... ...</p>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="proleftbox">
-                                <img src="images/img_list02.png" width="255" height="175" />
-                            </div>
-                            <div class="rightinfo">
-                                <p class="tit"><a href="#">马甲A001-01</a></p>
-                                <p class="action"><a class="rate" href="#"><s></s>好评： 152</a><a class="popularity" href="#"><s></s>人气： 10000</a></p>
-                                <p>价格：100元</p>
-                                <p class="pre">详情：2010年全新雅致条纹休闲西服，给时尚优雅的您全新的舒适体验，提升魅力指数，是商务休闲兼具的款式。采用98%高质棉+2%氨纶面料，手感柔软且挺括有型... ...</p>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="proleftbox">
-                                <img src="images/img_list02.png" width="255" height="175" />
-                            </div>
-                            <div class="rightinfo">
-                                <p class="tit"><a href="#">马甲A001-01</a></p>
-                                <p class="action"><a class="rate" href="#"><s></s>好评： 152</a><a class="popularity" href="#"><s></s>人气： 10000</a></p>
-                                <p>价格：100元</p>
-                                <p class="pre">详情：2010年全新雅致条纹休闲西服，给时尚优雅的您全新的舒适体验，提升魅力指数，是商务休闲兼具的款式。采用98%高质棉+2%氨纶面料，手感柔软且挺括有型... ...</p>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="proleftbox">
-                                <img src="images/img_list02.png" width="255" height="175" />
-                            </div>
-                            <div class="rightinfo">
-                                <p class="tit"><a href="#">马甲A001-01</a></p>
-                                <p class="action"><a class="rate" href="#"><s></s>好评： 152</a><a class="popularity" href="#"><s></s>人气： 10000</a></p>
-                                <p>价格：100元</p>
-                                <p class="pre">详情：2010年全新雅致条纹休闲西服，给时尚优雅的您全新的舒适体验，提升魅力指数，是商务休闲兼具的款式。采用98%高质棉+2%氨纶面料，手感柔软且挺括有型... ...</p>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="proleftbox">
-                                <img src="images/img_list02.png" width="255" height="175" />
-                            </div>
-                            <div class="rightinfo">
-                                <p class="tit"><a href="#">马甲A001-01</a></p>
-                                <p class="action"><a class="rate" href="#"><s></s>好评： 152</a><a class="popularity" href="#"><s></s>人气： 10000</a></p>
-                                <p>价格：100元</p>
-                                <p class="pre">详情：2010年全新雅致条纹休闲西服，给时尚优雅的您全新的舒适体验，提升魅力指数，是商务休闲兼具的款式。采用98%高质棉+2%氨纶面料，手感柔软且挺括有型... ...</p>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="proleftbox">
-                                <img src="images/img_list02.png" width="255" height="175" />
-                            </div>
-                            <div class="rightinfo">
-                                <p class="tit"><a href="#">马甲A001-01</a></p>
-                                <p class="action"><a class="rate" href="#"><s></s>好评： 152</a><a class="popularity" href="#"><s></s>人气： 10000</a></p>
-                                <p>价格：100元</p>
-                                <p class="pre">详情：2010年全新雅致条纹休闲西服，给时尚优雅的您全新的舒适体验，提升魅力指数，是商务休闲兼具的款式。采用98%高质棉+2%氨纶面料，手感柔软且挺括有型... ...</p>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="proleftbox">
-                                <img src="images/img_list02.png" width="255" height="175" />
-                            </div>
-                            <div class="rightinfo">
-                                <p class="tit"><a href="#">马甲A001-01</a></p>
-                                <p class="action"><a class="rate" href="#"><s></s>好评： 152</a><a class="popularity" href="#"><s></s>人气： 10000</a></p>
-                                <p>价格：100元</p>
-                                <p class="pre">详情：2010年全新雅致条纹休闲西服，给时尚优雅的您全新的舒适体验，提升魅力指数，是商务休闲兼具的款式。采用98%高质棉+2%氨纶面料，手感柔软且挺括有型... ...</p>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="proleftbox">
-                                <img src="images/img_list02.png" width="255" height="175" />
-                            </div>
-                            <div class="rightinfo">
-                                <p class="tit"><a href="#">马甲A001-01</a></p>
-                                <p class="action"><a class="rate" href="#"><s></s>好评： 152</a><a class="popularity" href="#"><s></s>人气： 10000</a></p>
-                                <p>价格：100元</p>
-                                <p class="pre">详情：2010年全新雅致条纹休闲西服，给时尚优雅的您全新的舒适体验，提升魅力指数，是商务休闲兼具的款式。采用98%高质棉+2%氨纶面料，手感柔软且挺括有型... ...</p>
-                            </div>
-                        </li>
+                        {/dede:list}
+                        <!--小分类 end-->
                     </ul>
                     <div class="page_div">
-                        <div class="page"><a class="dis" href="#">首页</a> <span class="page_cur">1</span> <a href="#"><span>2</span></a> <a href="#"><span>3</span></a> <a href="#"><span>4</span></a> <a href="#"><span>5</span></a> <a href="#"><span>6</span></a> <a href="#"><span>10</span></a> <a href="#">下一页</a> <a href="#">末页</a> </div>
+                        <div class="page">
+                           {dede:pagelist listitem="info,index,end,pre,next,pageno,option" listsize="5"/}
+                           <!--
+                           TODO：分页样式
+                            <a class="dis" href="#">首页</a> <span class="page_cur">1</span> <a href="#"><span>2</span></a>
+                            <a href="#"><span>3</span></a> <a href="#"><span>4</span></a> <a href="#"><span>5</span></a>
+                            <a href="#"><span>6</span></a> <a href="#"><span>10</span></a> <a href="#">下一页</a>
+                            <a href="#">末页</a>
+                            -->
+                        </div>
                     </div>
                 </div>
             </div>

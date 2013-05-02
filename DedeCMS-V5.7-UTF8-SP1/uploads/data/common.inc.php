@@ -3,7 +3,7 @@
 $cfg_dbhost = 'localhost';
 $cfg_dbname = 'dedecmsv57utf8sp1';
 $cfg_dbuser = 'root';
-$cfg_dbpwd = '123456';
+$cfg_dbpwd = '000000';
 $cfg_dbprefix = 'dede_';
 $cfg_db_language = 'utf8';
 
