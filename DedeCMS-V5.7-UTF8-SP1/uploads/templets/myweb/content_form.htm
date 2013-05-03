@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>{dede:field.typename/}_{dede:global.cfg_webname/}</title>
+    <link href="/templets/myweb/css/common.css" rel="stylesheet" type="text/css" />
+    <link href="{dede:global.cfg_templets_skin/}/css/form.css" rel="stylesheet" type="text/css" />
+    <link href="{dede:global.cfg_templets_skin/}/css/style.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="{dede:global.cfg_templets_skin/}/js/jquery-1.9.1.min.js "></script>
+</head>
+<body>
+    {dede:include filename="head.htm"/}	
+    <div class="wrapper">
+        <div class="main_left">
+<div class="position">
+            {dede:include filename="position.htm"/}
+</div>
+            <div class="adspace">
+                <img src="images/app01.png" width="300" height="196" /></div>
+            <div class="adspace">
+                <img src="images/app02.png" width="300" height="260" /></div>
+        </div>
+        <div class="main_right">
+            <div class="mod">
+                <div class="title"><strong>{dede:field.typename/}</strong> </div>
+                <div class="mod_con">
+                    <div class="form_div">
+                    {dede:field.content/}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {dede:include filename="footer.htm"/}
+</body>
+</html>
