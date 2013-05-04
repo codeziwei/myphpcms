@@ -12,7 +12,12 @@
     <div class="wrapper">
         <div class="main_left">
 <div class="position">
-            {dede:include filename="position.htm"/}
+<div class="title">您现在的位置：</div><div class="pos_con menu"><ul>
+ {dede:channel type='son' row='10' typeid="2" currentstyle="<li class='cur'><a href='~typelink~' ~rel~><span>~typename~</span></a></li>"}
+      	<li><a href='[field:typeurl/]' [field:rel/]><span>[field:typename/]</span></a></li>
+ {/dede:channel}
+</ul>
+</div>
 </div>
             <div class="adspace">
                 <img src="images/app01.png" width="300" height="196" /></div>

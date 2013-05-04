@@ -76,11 +76,11 @@
 /* 纵向菜单 */
 .menu { background-color:#f6f6f4;}
 .menu ul { padding:0 30px;}
-.menu li { background:url(../images/menubg.png) 0 0 repeat-x; height:38px; overflow:hidden; padding:0 70px;}
+.menu li { background:url(../images/menubg.png) 0 0 repeat-x; height:38px; overflow:hidden; padding:0 70px; font-size:16px; line-height:38px;}
 .menu li.cur { background:url(../images/menubg.png) 0 -35px repeat-x;}
-.menu li a { color:#2371b7; font-size:16px; height:38px; line-height:38px;}
+.menu li a { color:#2371b7; height:38px;}
 .menu li.cur a { color:#252525;}
-.menu li a span { background-color:#f6f6f4; height: 38px; display:block; text-align:center; width:100px;}
+.menu li span { background-color:#f6f6f4; height: 38px; display:block; text-align:center; width:100px;}
 .news_list {}
 .news_list li { border-bottom:1px solid #cccccc; color:#898989; margin:0 5px 12px 5px; overflow: hidden; padding:0 0 12px 0; zoom: 1;}
 .news_list li .left_logo { float:left; height:72px; width:130px;}
