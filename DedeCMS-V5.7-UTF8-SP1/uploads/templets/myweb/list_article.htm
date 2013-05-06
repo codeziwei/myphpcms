@@ -7,6 +7,17 @@
 <meta name="description" content="{dede:field name='description' function='html2text(@me)'/}" />
 <link href="{dede:global.cfg_templets_skin/}/css/common.css" rel="stylesheet" media="screen" type="text/css" />
 <link href="{dede:global.cfg_templets_skin/}/css/style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="{dede:global.cfg_templets_skin/}/js/jquery-1.9.1.min.js "></script>
+<script type="text/javascript">
+         $(document).ready(function () {
+             $(".pos_con  li ").removeClass("cur");
+             $(".pos_con  li a").each(function () {
+                 if ($(this).text() == "{dede:field.typename/}") {
+                     $(this).parent().addClass("cur");
+                 }
+             })
+         });
+    </script>
 </head>
 <body class="articlelist">
 {dede:include filename="head.htm"/}

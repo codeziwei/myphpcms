@@ -7,6 +7,16 @@
     <link href="{dede:global.cfg_templets_skin/}/css/style.css" rel="stylesheet" type="text/css" />
     <link href="{dede:global.cfg_templets_skin/}/css/form.css" rel="stylesheet" type="text/css" />
     <script type="text/javascript" src="{dede:global.cfg_templets_skin/}/js/jquery-1.9.1.min.js "></script>
+<script type="text/javascript">
+         $(document).ready(function () {
+             $(".pos_con  li ").removeClass("cur");
+             $(".pos_con  li a").each(function () {
+                 if ($(this).text() == "{dede:field.typename/}") {
+                     $(this).parent().addClass("cur");
+                 }
+             })
+         });
+    </script>
 </head>
 <body>
     {dede:include filename="head.htm"/}	
@@ -22,9 +32,9 @@
 </div>
 </div>
             <div class="adspace">
-                <img src="images/app01.png" width="300" height="196" /></div>
+                <img src="{dede:global.cfg_templets_skin/}images/app01.png" width="300" height="196" /></div>
             <div class="adspace">
-                <img src="images/app02.png" width="300" height="260" /></div>
+                <img src="{dede:global.cfg_templets_skin/}images/app02.png" width="300" height="260" /></div>
         </div>
         <div class="main_right">
             <div class="mod">

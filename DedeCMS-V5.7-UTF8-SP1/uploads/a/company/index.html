@@ -1,59 +1,63 @@
-﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>关于我们</title>
+    <title>关于我们_我的网站</title>
     <link href="/templets/myweb/css/common.css" rel="stylesheet" type="text/css" />
     <link href="/templets/myweb/css/index.css" rel="stylesheet" type="text/css" />
     <link href="/templets/myweb/css/style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="/templets/myweb/js/jquery-1.9.1.min.js "></script>
+<script type="text/javascript">
+         $(document).ready(function () {
+             $(".pos_con  li ").removeClass("cur");
+             $(".pos_con  li a").each(function () {
+                 if ($(this).text() == "关于我们") {
+                     $(this).parent().addClass("cur");
+                 }
+             })
+         });
+    </script>
 </head>
 <body>
     <div class="top_bar">
-
     <div class="top_bar_wrap">
-
         <span class="fl">欢迎来到北京雅迪尔服装有限公司 !</span>
-
         <div class="top_menu">
-
             <a href="#">[登录]</a>
-
             <a href="#">[注册]</a>
-
-            <a href="#">联系我们</a>
-
+            <a href="/a/lianxiwomen/">联系我们</a>
         </div>
-
     </div>
-
 </div>
 
 <div class="header">
-
     <div class="header_wrap">
-
 	    <h1><a href="#"></a></h1>
-
 		<div class="main_search">
-
 		    <div class="form"><input class="text" name="" type="text" /><input type="button" class="button" value="搜 索" /></div>
-
 			<div class="hotwords"><strong>热门搜索：</strong><a href="#">短袖</a><a href="#">套装</a><a href="#">校服</a><a href="#">工作服</a></div>
-
 		</div>
-
 	</div>
-
 </div>
 
 <div class="nav wrapper">
-
     <b class="nav_left_side"></b>
-
     <b class="nav_right_side"></b>
-
     <div class="nav_items">
-        
+       <a href='/index.php' >首页</a>
+    <a href="/a/company/">关于我们</a>
+    <a href="/a/gongshilicheng/">公司历程</a>
+    <a href="/a/gongshilicheng/">公司展厅</a>
+    <a href="/a/dingzhiliucheng/">定制流程</a>
+    <a href="/a/chenggonganli/">成功案例</a>
+    <a href="/a/tuangouzhuanqu/">团购专区</a>
+    <a href="/a/shishangzixun/">时尚资讯</a>
+    <!--<a href="/a/company/">面料知识</a>-->
+    <a href="/a/fuzhuangdapei/">服装搭配</a>
+    <a href="/a/hangyezixun/">行业新闻</a>
+    <a href="/a/chimaduizhaobiao">尺码对照表</a>
+    <a href="/a/lianxiwomen/">联系我们</a>
+       <!-- 
       	<a href='/a/company/'  rel='dropmenu2'>关于我们</a>
       	
       	<a href='/a/tuangouzhuanqu/' >团购专区</a>
@@ -62,7 +66,7 @@
       	
       	<a href='/a/gongsidongtai/' >公司动态</a>
       	
-      	<a href='/a/xingyezixun/' >行业资讯</a>
+      	<a href='/a/hangyezixun/' >行业资讯</a>
       	
       	<a href='/a/fuzhuangdapei/' >服装搭配</a>
       	
@@ -75,9 +79,7 @@
       	<a href='/a/bangzhuzhongxin/'  rel='dropmenu22'>服务中心</a>
       	
       	<a href='/a/category/'  rel='dropmenu10'>产品类型</a>
-      	
-    </div>
-
+      	-->    </div>
 </div>
 
 <div class="main_nav wrapper">
@@ -144,22 +146,7 @@
     </div>
 
 </div>
-
-<div class="adspace wrapper"><img src="/templets/myweb/images/pic.png" width="1000" height="120" /></div>
-
-<div class="wrapper">
-
-    <div class="main_left">
-
-    </div>
-
-	<div class="main_right">
-
-	</div>
-
-</div>
-
-	
+<div class="adspace wrapper"><img src="/templets/myweb/images/pic.png" width="1000" height="120" /></div>	
     <div class="wrapper">
         <div class="main_left">
 <div class="position">
@@ -171,11 +158,11 @@
  
       	<li><a href='/a/shengchanzhongxin/' ><span>生产中心</span></a></li>
  
-      	<li><a href='/a/company/youshi/' ><span>我们的优势</span></a></li>
+      	<li><a href='/a/youshi/' ><span>我们的优势</span></a></li>
  
       	<li><a href='/a/chengnuo/' ><span>承诺和宗旨</span></a></li>
  
-      	<li><a href='/a/womenderongyu/' ><span>我们的荣誉</span></a></li>
+      	<li><a href='/a/rongyu/' ><span>我们的荣誉</span></a></li>
  
       	<li><a href='/a/lianxiwomen/' ><span>联系我们</span></a></li>
  
@@ -183,9 +170,9 @@
 </div>
 </div>
             <div class="adspace">
-                <img src="images/app01.png" width="300" height="196" /></div>
+                <img src="/templets/myweb/images/app01.png" width="300" height="196" /></div>
             <div class="adspace">
-                <img src="images/app02.png" width="300" height="260" /></div>
+                <img src="/templets/myweb/images/app02.png" width="300" height="260" /></div>
         </div>
         <div class="main_right">
             <div class="mod">
