@@ -6,6 +6,8 @@
  <link href="/templets/myweb/css/common.css" rel="stylesheet" type="text/css" />
     <link href="/templets/myweb/css/index.css" rel="stylesheet" type="text/css" />
     <link href="/templets/myweb/css/style.css" rel="stylesheet" type="text/css" />
+    <script language="javascript" type="text/javascript" src="/templets/myweb/js/jquery-1.9.1.min.js"></script>
+
 </head>
 
 <body>
@@ -23,12 +25,25 @@
     <div class="header_wrap">
 	    <h1><a href="#"></a></h1>
 		<div class="main_search">
-		    <div class="form"><input class="text" name="" type="text" /><input type="button" class="button" value="搜 索" /></div>
-			<div class="hotwords"><strong>热门搜索：</strong><a href="#">短袖</a><a href="#">套装</a><a href="#">校服</a><a href="#">工作服</a></div>
+<form  name="formsearch" action="/plus/search.php">
+		    <div class="form">
+             <input type="hidden" name="kwtype" value="0" />
+<input type="hidden" name="searchtype" value="title" />
+            <input class="text"  name="q" type="text"   id="search-keyword" value="在这里搜索..." onfocus="if(this.value=='在这里搜索...'){this.value='';}"  onblur="if(this.value==''){this.value='在这里搜索...';}" />
+            <input type="submit" class="button" value="搜 索" /></div>
+</form>
+			<div class="hotwords"><strong>热门搜索：</strong><a href="javascript:searchkey('短袖');">短袖</a><a href="javascript:searchkey('套装')">套装</a>
+            <a href="javascript:searchkey('校服');">校服</a><a href="javascript:searchkey('工作服');">工作服</a></div>
+</div>
 		</div>
 	</div>
-</div>
-
+<script type="text/javascript">
+    function searchkey(k) {
+        if (k == "") return;
+        document.getElementById("search-keyword").value = k;
+        formsearch.submit();
+    }
+</script>
 <div class="nav wrapper">
     <b class="nav_left_side"></b>
     <b class="nav_right_side"></b>
@@ -90,169 +105,128 @@
         <dd>
      </dl><dl>
         <dt>
-      	<a href='/a/category/zhenzhixiuxian/' >针织休闲</a>
-        <dt>
-        <dd>
-            
-            <a href='/a/category/xifu/'  rel='dropmenu11'>西服套装</a>
-            
-            <a href='/a/category/zhenzhixiuxian/' >针织休闲</a>
-            
-            <a href='/a/category/zhiyegongzhuang/' >职业工装</a>
-            
-            <a href='/a/category/huwaiwaiyundong/' >户外外运动</a>
-            
-        <dd>
-     </dl><dl>
-        <dt>
       	<a href='/a/category/zhiyegongzhuang/' >职业工装</a>
         <dt>
         <dd>
             
             <a href='/a/category/xifu/'  rel='dropmenu11'>西服套装</a>
             
-            <a href='/a/category/zhenzhixiuxian/' >针织休闲</a>
-            
             <a href='/a/category/zhiyegongzhuang/' >职业工装</a>
             
-            <a href='/a/category/huwaiwaiyundong/' >户外外运动</a>
+            <a href='/a/category/zhenzhixiuxian/'  rel='dropmenu13'>针织休闲</a>
+            
+            <a href='/a/category/huwaiwaiyundong/' >户外运动</a>
             
         <dd>
      </dl><dl>
         <dt>
-      	<a href='/a/category/huwaiwaiyundong/' >户外外运动</a>
+      	<a href='/a/category/zhenzhixiuxian/' >针织休闲</a>
+        <dt>
+        <dd>
+            
+            <a href='/a/category/zhenzhixiuxian/zhenzhishan/' >针织衫</a>
+            
+            <a href='/a/category/zhenzhixiuxian/polo-shirt/' >POLO衫</a>
+            
+            <a href='/a/category/zhenzhixiuxian/fanling-shirt/' >翻领T恤衫</a>
+            
+            <a href='/a/category/zhenzhixiuxian/qinglvshan/' >情侣衫</a>
+            
+        <dd>
+     </dl><dl>
+        <dt>
+      	<a href='/a/category/huwaiwaiyundong/' >户外运动</a>
         <dt>
         <dd>
             
             <a href='/a/category/xifu/'  rel='dropmenu11'>西服套装</a>
             
-            <a href='/a/category/zhenzhixiuxian/' >针织休闲</a>
-            
             <a href='/a/category/zhiyegongzhuang/' >职业工装</a>
             
-            <a href='/a/category/huwaiwaiyundong/' >户外外运动</a>
+            <a href='/a/category/zhenzhixiuxian/'  rel='dropmenu13'>针织休闲</a>
+            
+            <a href='/a/category/huwaiwaiyundong/' >户外运动</a>
             
         <dd>
      </dl>
     </div>
 </div>
 <div class="adspace wrapper"><img src="/templets/myweb/images/pic.png" width="1000" height="120" /></div>	
-<div class="wrapper">
-    产品导航
-      ﻿<!--产品所在位置导航-->
-<div class="title">您现在的位置ces：</div><div class="pos_con menu"><ul>
-<!-- 
-      	<li><a href='/a/company/'  rel='dropmenu2'><span>关于我们</span></a></li>
- 
-      	<li><a href='/a/tuangouzhuanqu/' ><span>团购专区</span></a></li>
- 
-      	<li><a href='/a/chimaduizhaobiao/' ><span>尺码对照表</span></a></li>
- 
-      	<li><a href='/a/gongsidongtai/' ><span>公司动态</span></a></li>
- 
-      	<li><a href='/a/hangyezixun/' ><span>行业新闻</span></a></li>
- 
-      	<li><a href='/a/fuzhuangdapei/' ><span>服装搭配</span></a></li>
- 
-      	<li><a href='/a/shishangzixun/' ><span>时尚资讯</span></a></li>
- 
-      	<li><a href='/a/fushibaike/' ><span>服饰百科</span></a></li>
- 
-      	<li><a href='/a/chenggonganli/' ><span>成功案例</span></a></li>
- 
-      	<li><a href='/a/bangzhuzhongxin/'  rel='dropmenu22'><span>服务中心</span></a></li>
- -->
-  西服套装
-
-</ul>
-</div>	
-    ﻿<div class="main_left">
-    <div class="position">
-        <div class="title">
-            您现在的位置：</div>
-        <div class="pos_con">
-            <div class="name">
-                西<br />
-                服<br />
-                正<br />
-                装</div>
-            <div class="item">
-                <a href="#">正装西服</a> <a href="#">休闲西服</a> <a href="#">礼服</a> <a href="#">西裤</a>
-                <a class="cur" href="#">马甲</a> <a href="#">领带</a> <a href="#">领结</a> <a href="#">方巾</a>
-                <a href="#">皮带</a> <a href="#">皮鞋</a> <a href="#">袖扣</a></div>
+<div class="wrapper">	
+     <div class="main_left">
+            <!--产品所在位置导航-->
+<div class="position">
+    <div class="title">
+        您现在的位置：</div>
+    <div class="pos_con">
+        <div class="name">
+             西服套装 
         </div>
-    </div>
-    <div class="mod">
-        <div class="title">
-            <em class="hot"></em><strong>热门产品</strong></div>
-        <div class="mod_con">
-            <!--最热 begin-->
-            <dl class="good_list">
-                <dt><a href="#">
-                    <img src="/uploads/demo/zhengzhuang.png" width="115" height="70" /></a></dt>
-                <dd>
-                    <a class="name" href="/a/category/xifu/zhengzhuangxifu/2013/0501/8.html">男士白色西服职业装2</a></dd>
-                <dd>
-                    <a class="rate" href="#"><s></s>好评： 152</a></dd>
-                <dd>
-                    <a class="popularity" href="#"><s></s>人气：<script src="/plus/count.php?view=yes&aid=8&mid=1" type='text/javascript' language="javascript"></script></a></dd>
-            </dl>
-
-            <!--最热 end-->
-        </div>
-    </div>
-    <div class="mod">
-        <div class="title">
-            <strong>推荐产品</strong></div>
-        <div class="mod_con">
-            <!--推荐 begin-->
-            <dl class="good_list">
-                <dt><a href="#">
-                    <img src="/uploads/demo/zhengzhuang.png" width="115" height="70" /></a></dt>
-                <dd>
-                    <a class="name" href="/a/category/xifu/zhengzhuangxifu/2013/0501/8.html">男士白色西服职业装2</a></dd>
-                <dd>
-                    <a class="rate" href="#"><s></s>好评： 152</a></dd>
-                <dd>
-                    <a class="popularity" href="#"><s></s>人气：<script src="/plus/count.php?view=yes&aid=8&mid=1" type='text/javascript' language="javascript"></script></a></dd>
-            </dl>
-
-            <!--推荐 end-->
-
-        </div>
-    </div>
-    <div class="mod">
-        <div class="title">
-            <strong>西服咨询</strong><a class="more" href="#">更多</a></div>
-        <div class="mod_con">
-            <ul class="imgtxt">
-                <li class="imgArea"><a href="#">
-                    <img src="images/imgarea.png" width="115" height="70" /></a> </li>
-                <li class="txtArea">
-                    <p>
-                        北京的冬天似乎比去年来的要晚些，但是丝毫不影响北京市服装市场 <a href="#">[详细]</a></p>
-                </li>
-            </ul>
-            <ul class="mod_list">
-                <li><a href="#">西服品牌排名_认识西服从品牌开始</a></li>
-                <li><a href="#">西服品牌排名_认识西服从品牌开始</a></li>
-                <li><a href="#">西服品牌排名_认识西服从品牌开始</a></li>
-                <li><a href="#">西服品牌排名_认识西服从品牌开始</a></li>
-                <li><a href="#">西服品牌排名_认识西服从品牌开始</a></li>
-                <li><a href="#">西服品牌排名_认识西服从品牌开始</a></li>
-                <li><a href="#">西服品牌排名_认识西服从品牌开始</a></li>
-            </ul>
+        <div class="item">
+            <!--class="cur"-->
+             <a href='/a/category/xifu/zhengzhuangxifu/'>正装西服</a>  <a href='/a/category/xifu/xiuxianxifu/'>休闲西服</a>  <a href='/a/category/xifu/zhengzhuangchenshan/'>正装衬衫</a> 
         </div>
     </div>
 </div>
-	
+<script type="text/javascript">
+    $(document).ready(function () {
+        $(".position>.pos_con >.item a").removeClass("cur");
+        $(".position>.pos_con >.item a").each(function () {
+            if ($(this).text() == "正装西服") {
+                $(this).addClass("cur");
+            }
+        })
+    });
+</script> <div class="mod">
+    <div class="title">
+        <em class="hot"></em><strong>热门产品</strong></div>
+    <div class="mod_con">
+        <!--最热 begin-->
+        <dl class="good_list">
+            <dt><a href="#">
+                <img src="/uploads/demo/zhengzhuang.png" width="115" height="70" /></a></dt>
+            <dd>
+                <a class="name" href="/a/category/xifu/zhengzhuangxifu/2013/0501/8.html">男士白色西服职业装2</a></dd>
+            <dd>
+                <a class="rate" href="#"><s></s>好评： 152</a></dd>
+            <dd>
+                <a class="popularity" href="#"><s></s>人气：<script src="/plus/count.php?view=yes&aid=8&mid=1"
+                    type='text/javascript' language="javascript"></script></a></dd>
+        </dl>
+
+        <!--最热 end-->
+    </div>
+</div>
+
+            <div class="mod">
+    <div class="title">
+        <strong>推荐产品</strong></div>
+    <div class="mod_con">
+        <!--推荐 begin-->
+        <dl class="good_list">
+            <dt><a href="#">
+                <img src="/uploads/demo/zhengzhuang.png" width="115" height="70" /></a></dt>
+            <dd>
+                <a class="name" href="/a/category/xifu/zhengzhuangxifu/2013/0501/8.html">男士白色西服职业装2</a></dd>
+            <dd>
+                <a class="rate" href="#"><s></s>好评： 152</a></dd>
+            <dd>
+                <a class="popularity" href="#"><s></s>人气：<script src="/plus/count.php?view=yes&aid=8&mid=1"
+                    type='text/javascript' language="javascript"></script></a></dd>
+        </dl>
+
+        <!--推荐 end-->
+    </div>
+</div>
+
+        </div>	
 	<div class="main_right">
 	    <div class="mod">
             <div class="title"><strong>男士白色西服职业装2</strong> </div>
 	        <div class="mod_con">
 			    <div class="det_img"><img src="/uploads/demo/zhengzhuang.png" border="0" style="height:275px;width:345px" /></div>
                 <div class="det_right">
-                    <p>&nbsp;</p>
+                    <p> </p>
                     <p>产品编号：男士白色西服职业装2</p>
                     <p>人气： <script src="/plus/count.php?view=yes&aid=8&mid=1" type='text/javascript' language="javascript"></script></p>
                     <p>面料成分： 定制　　　       色系： 定制</p>

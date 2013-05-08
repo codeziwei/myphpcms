@@ -6,21 +6,24 @@
  <link href="/templets/myweb/css/common.css" rel="stylesheet" type="text/css" />
     <link href="/templets/myweb/css/index.css" rel="stylesheet" type="text/css" />
     <link href="/templets/myweb/css/style.css" rel="stylesheet" type="text/css" />
+    <script language="javascript" type="text/javascript" src="{dede:global.cfg_templets_skin/}/js/jquery-1.9.1.min.js"></script>
+
 </head>
 
 <body>
 {dede:include filename="head.htm"/}	
-<div class="wrapper">
-    产品导航
-      {dede:include filename="position_product.htm"/}	
-    {dede:include filename="product_left.htm"/}	
+<div class="wrapper">	
+     <div class="main_left">
+            {dede:include filename="position_product.htm"/} {dede:include filename="product_hot.htm"/}
+            {dede:include filename="product_commend.htm"/}
+        </div>	
 	<div class="main_right">
 	    <div class="mod">
             <div class="title"><strong>{dede:field name='title'/}</strong> </div>
 	        <div class="mod_con">
 			    <div class="det_img"><img src="{dede:field.litpic/}" border="0" style="height:275px;width:345px" /></div>
                 <div class="det_right">
-                    <p>&nbsp;</p>
+                    <p> </p>
                     <p>产品编号：{dede:field name='title'/}</p>
                     <p>人气： <script src="{dede:field name='phpurl'/}/count.php?view=yes&aid={dede:field name='id'/}&mid={dede:field name='mid'/}" type='text/javascript' language="javascript"></script></p>
                     <p>面料成分： 定制　　　       色系： 定制</p>

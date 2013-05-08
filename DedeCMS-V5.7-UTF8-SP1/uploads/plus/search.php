@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 /**
  *
  * 搜索页
@@ -35,6 +35,7 @@ $oldkeyword = $keyword = FilterSearch(stripslashes($keyword));
 //查找栏目信息
 if(empty($typeid))
 {
+
     $typenameCacheFile = DEDEDATA.'/cache/typename.inc';
     if(!file_exists($typenameCacheFile) || filemtime($typenameCacheFile) < time()-(3600*24) )
     {
@@ -105,6 +106,7 @@ $t1 = ExecTime();
 
 $sp = new SearchView($typeid,$keyword,$orderby,$channeltype,$searchtype,$starttime,$pagesize,$kwtype,$mid);
 $keyword = $oldkeyword;
+
 $sp->Display();
 
 

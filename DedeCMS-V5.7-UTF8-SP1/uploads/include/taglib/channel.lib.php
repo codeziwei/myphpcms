@@ -24,7 +24,7 @@
     <iterm>reid:上级栏目ID</iterm>
     <iterm>row:调用栏目数</iterm>
     <iterm>col:分多少列显示（默认为单列）</iterm>
-    <iterm>type:son表示下级栏目,self表示同级栏目,top顶级栏目</iterm>
+    <iterm>type:son表示下级栏目,self表示同级栏目,top顶级栏目 parent父级</iterm>
     <iterm>currentstyle:应用样式</iterm>
 </attributes> 
 >>dede>>*/
@@ -92,6 +92,11 @@ function lib_channel(&$ctag,&$refObj)
         $sql = "SELECT id,typename,typedir,isdefault,ispart,defaultname,namerule2,moresite,siteurl,sitepath
             FROM `#@__arctype` WHERE reid='$reid' And ishidden<>1 order by sortrank asc limit 0, $line ";
     }
+else if($type=='parent') //add by gsc
+{ 
+  $sql = "Select id,typename,typedir,isdefault,ispart,defaultname,namerule2,moresite,siteurl,sitepath
+   From `dede_arctype` where id='$reid'  AND ishidden<>1 order by sortrank asc limit 0, $line ";
+}
     //And id<>'$typeid'
     $needRel = false;
     $dtp2 = new DedeTagParse();

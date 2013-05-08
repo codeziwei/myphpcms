@@ -33,12 +33,25 @@
     <div class="header_wrap">
 	    <h1><a href="#"></a></h1>
 		<div class="main_search">
-		    <div class="form"><input class="text" name="" type="text" /><input type="button" class="button" value="搜 索" /></div>
-			<div class="hotwords"><strong>热门搜索：</strong><a href="#">短袖</a><a href="#">套装</a><a href="#">校服</a><a href="#">工作服</a></div>
+<form  name="formsearch" action="/plus/search.php">
+		    <div class="form">
+             <input type="hidden" name="kwtype" value="0" />
+<input type="hidden" name="searchtype" value="title" />
+            <input class="text"  name="q" type="text"   id="search-keyword" value="在这里搜索..." onfocus="if(this.value=='在这里搜索...'){this.value='';}"  onblur="if(this.value==''){this.value='在这里搜索...';}" />
+            <input type="submit" class="button" value="搜 索" /></div>
+</form>
+			<div class="hotwords"><strong>热门搜索：</strong><a href="javascript:searchkey('短袖');">短袖</a><a href="javascript:searchkey('套装')">套装</a>
+            <a href="javascript:searchkey('校服');">校服</a><a href="javascript:searchkey('工作服');">工作服</a></div>
+</div>
 		</div>
 	</div>
-</div>
-
+<script type="text/javascript">
+    function searchkey(k) {
+        if (k == "") return;
+        document.getElementById("search-keyword").value = k;
+        formsearch.submit();
+    }
+</script>
 <div class="nav wrapper">
     <b class="nav_left_side"></b>
     <b class="nav_right_side"></b>
@@ -100,47 +113,47 @@
         <dd>
      </dl><dl>
         <dt>
-      	<a href='/a/category/zhenzhixiuxian/' >针织休闲</a>
-        <dt>
-        <dd>
-            
-            <a href='/a/category/xifu/'  rel='dropmenu11'>西服套装</a>
-            
-            <a href='/a/category/zhenzhixiuxian/' >针织休闲</a>
-            
-            <a href='/a/category/zhiyegongzhuang/' >职业工装</a>
-            
-            <a href='/a/category/huwaiwaiyundong/' >户外外运动</a>
-            
-        <dd>
-     </dl><dl>
-        <dt>
       	<a href='/a/category/zhiyegongzhuang/' >职业工装</a>
         <dt>
         <dd>
             
             <a href='/a/category/xifu/'  rel='dropmenu11'>西服套装</a>
             
-            <a href='/a/category/zhenzhixiuxian/' >针织休闲</a>
-            
             <a href='/a/category/zhiyegongzhuang/' >职业工装</a>
             
-            <a href='/a/category/huwaiwaiyundong/' >户外外运动</a>
+            <a href='/a/category/zhenzhixiuxian/'  rel='dropmenu13'>针织休闲</a>
+            
+            <a href='/a/category/huwaiwaiyundong/' >户外运动</a>
             
         <dd>
      </dl><dl>
         <dt>
-      	<a href='/a/category/huwaiwaiyundong/' >户外外运动</a>
+      	<a href='/a/category/zhenzhixiuxian/' >针织休闲</a>
+        <dt>
+        <dd>
+            
+            <a href='/a/category/zhenzhixiuxian/zhenzhishan/' >针织衫</a>
+            
+            <a href='/a/category/zhenzhixiuxian/polo-shirt/' >POLO衫</a>
+            
+            <a href='/a/category/zhenzhixiuxian/fanling-shirt/' >翻领T恤衫</a>
+            
+            <a href='/a/category/zhenzhixiuxian/qinglvshan/' >情侣衫</a>
+            
+        <dd>
+     </dl><dl>
+        <dt>
+      	<a href='/a/category/huwaiwaiyundong/' >户外运动</a>
         <dt>
         <dd>
             
             <a href='/a/category/xifu/'  rel='dropmenu11'>西服套装</a>
             
-            <a href='/a/category/zhenzhixiuxian/' >针织休闲</a>
-            
             <a href='/a/category/zhiyegongzhuang/' >职业工装</a>
             
-            <a href='/a/category/huwaiwaiyundong/' >户外外运动</a>
+            <a href='/a/category/zhenzhixiuxian/'  rel='dropmenu13'>针织休闲</a>
+            
+            <a href='/a/category/huwaiwaiyundong/' >户外运动</a>
             
         <dd>
      </dl>

@@ -89,3 +89,11 @@
 .news_list li .rightcon .tit .bt { color:#252525; float:left; font: 500 18px/28px "微软雅黑";}
 .news_list li .rightcon .tit .date { color:#898989; float: right; font-size:14px;}
 .news_list li .rightcon .con { font-size:13px; height:40px; line-height:20px; margin-top:4px; overflow: hidden; text-overflow: ellipsis;}
+/* 搜索页 */
+.resultbar { background-color:#12a1d5; color:#ffffff; height:30px; line-height:30px; padding-left:10px;}
+.result_content {border:1px solid #13c6ff; background-color:#f6f6f4; margin: 10px 0; overflow:hidden; position:relative; zoom:1;}
+.resultlist {clear: both; overflow: hidden; padding: 10px;}
+.resultlist li { border-bottom:1px dashed #cccccc; color:#555555; margin-bottom:15px; padding:0 5px 15px; overflow: hidden; zoom: 1;}
+.resultlist li h3 {color: #03539e; font-size: 18px; padding: 10px 0;}
+.resultlist a {color: #03539e;}
+.resultlist li p { font-size: 14px; line-height: 25px;}

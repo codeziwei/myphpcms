@@ -33,12 +33,25 @@
     <div class="header_wrap">
 	    <h1><a href="#"></a></h1>
 		<div class="main_search">
-		    <div class="form"><input class="text" name="" type="text" /><input type="button" class="button" value="搜 索" /></div>
-			<div class="hotwords"><strong>热门搜索：</strong><a href="#">短袖</a><a href="#">套装</a><a href="#">校服</a><a href="#">工作服</a></div>
+<form  name="formsearch" action="/plus/search.php">
+		    <div class="form">
+             <input type="hidden" name="kwtype" value="0" />
+<input type="hidden" name="searchtype" value="title" />
+            <input class="text"  name="q" type="text"   id="search-keyword" value="在这里搜索..." onfocus="if(this.value=='在这里搜索...'){this.value='';}"  onblur="if(this.value==''){this.value='在这里搜索...';}" />
+            <input type="submit" class="button" value="搜 索" /></div>
+</form>
+			<div class="hotwords"><strong>热门搜索：</strong><a href="javascript:searchkey('短袖');">短袖</a><a href="javascript:searchkey('套装')">套装</a>
+            <a href="javascript:searchkey('校服');">校服</a><a href="javascript:searchkey('工作服');">工作服</a></div>
+</div>
 		</div>
 	</div>
-</div>
-
+<script type="text/javascript">
+    function searchkey(k) {
+        if (k == "") return;
+        document.getElementById("search-keyword").value = k;
+        formsearch.submit();
+    }
+</script>
 <div class="nav wrapper">
     <b class="nav_left_side"></b>
     <b class="nav_right_side"></b>
@@ -100,47 +113,47 @@
         <dd>
      </dl><dl>
         <dt>
-      	<a href='/a/category/zhenzhixiuxian/' >针织休闲</a>
-        <dt>
-        <dd>
-            
-            <a href='/a/category/xifu/'  rel='dropmenu11'>西服套装</a>
-            
-            <a href='/a/category/zhenzhixiuxian/' >针织休闲</a>
-            
-            <a href='/a/category/zhiyegongzhuang/' >职业工装</a>
-            
-            <a href='/a/category/huwaiwaiyundong/' >户外外运动</a>
-            
-        <dd>
-     </dl><dl>
-        <dt>
       	<a href='/a/category/zhiyegongzhuang/' >职业工装</a>
         <dt>
         <dd>
             
             <a href='/a/category/xifu/'  rel='dropmenu11'>西服套装</a>
             
-            <a href='/a/category/zhenzhixiuxian/' >针织休闲</a>
-            
             <a href='/a/category/zhiyegongzhuang/' >职业工装</a>
             
-            <a href='/a/category/huwaiwaiyundong/' >户外外运动</a>
+            <a href='/a/category/zhenzhixiuxian/'  rel='dropmenu13'>针织休闲</a>
+            
+            <a href='/a/category/huwaiwaiyundong/' >户外运动</a>
             
         <dd>
      </dl><dl>
         <dt>
-      	<a href='/a/category/huwaiwaiyundong/' >户外外运动</a>
+      	<a href='/a/category/zhenzhixiuxian/' >针织休闲</a>
+        <dt>
+        <dd>
+            
+            <a href='/a/category/zhenzhixiuxian/zhenzhishan/' >针织衫</a>
+            
+            <a href='/a/category/zhenzhixiuxian/polo-shirt/' >POLO衫</a>
+            
+            <a href='/a/category/zhenzhixiuxian/fanling-shirt/' >翻领T恤衫</a>
+            
+            <a href='/a/category/zhenzhixiuxian/qinglvshan/' >情侣衫</a>
+            
+        <dd>
+     </dl><dl>
+        <dt>
+      	<a href='/a/category/huwaiwaiyundong/' >户外运动</a>
         <dt>
         <dd>
             
             <a href='/a/category/xifu/'  rel='dropmenu11'>西服套装</a>
             
-            <a href='/a/category/zhenzhixiuxian/' >针织休闲</a>
-            
             <a href='/a/category/zhiyegongzhuang/' >职业工装</a>
             
-            <a href='/a/category/huwaiwaiyundong/' >户外外运动</a>
+            <a href='/a/category/zhenzhixiuxian/'  rel='dropmenu13'>针织休闲</a>
+            
+            <a href='/a/category/huwaiwaiyundong/' >户外运动</a>
             
         <dd>
      </dl>
@@ -185,9 +198,8 @@
                 <div class="mod_con detail_con">
                     <form action="/plus/diy.php" enctype="multipart/form-data" method="post">
 	<input name="action" type="hidden" value="post" /> <input name="diyid" type="hidden" value="1" /> <input name="do" type="hidden" value="2" />
-	 <div style="font-size:14px;"> 
-                    <span class="red">带*号的选项必填 </span>	
-                            请您尽量详细的填写以下定制信息，以便我们可以为您提供更精准的服务。</div>
+	<div style="font-size:14px;">
+		<span class="red">带*号的选项必填 </span> 请您尽量详细的填写以下定制信息，以便我们可以为您提供更精准的服务。</div>
 	<dl class="form_row">
 		<dt>
 			<span class="red">*</span>款式类型：</dt>
@@ -280,7 +292,7 @@
 		<dd class="btn">
 			<input class="btn_tijiao" name="submit" onclick="return checkform();" type="submit" value="" /> <input class="btn_zixun" name="" type="button" value="" /></dd>
 	</dl>
-</form>
+	<input name="dede_fields" type="hidden" value="kslx,radio;jijie,radio;dzsl,int;ys,float;cpbh,text;bcxx,multitext;xingming,text;xingbie,radio;email,text;tel,text;address,text;brief,multitext" /> <input name="dede_fieldshash" type="hidden" value="2ccf1fbc2953c0df1f98782e59279f3a" /></form>
 <script type="text/javascript">
                             function ChangeCode() {
                                 $("#validationCode").attr("src", "/include/vdimgck.php?t=" + Math.round(Math.random() * 10000).toString());

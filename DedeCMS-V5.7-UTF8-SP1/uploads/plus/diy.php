@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 /**
  *
  * 自定义表单
@@ -10,6 +10,7 @@
  * @link           http://www.dedecms.com
  */
 require_once(dirname(__FILE__)."/../include/common.inc.php");
+require_once(DEDEINC.'/membermodel.cls.php');
 
 $diyid = isset($diyid) && is_numeric($diyid) ? $diyid : 0;
 $action = isset($action) && in_array($action, array('post', 'list', 'view')) ? $action : 'post';
@@ -37,6 +38,17 @@ if($action == 'post')
     }
     elseif($do == 2)
     {
+//验证码验证
+        $svali = GetCkVdValue();
+         if(preg_match("/1/",$safe_gdopen)){
+             if(strtolower($vdcode)!=$svali || $svali=='')
+             {
+                 ResetVdValue();
+                 ShowMsg('验证码错误！', '-1');
+                 exit();
+             }  
+         }
+
         $dede_fields = empty($dede_fields) ? '' : trim($dede_fields);
         $dede_fieldshash = empty($dede_fieldshash) ? '' : trim($dede_fieldshash);
         if(!empty($dede_fields))
@@ -60,6 +72,7 @@ if($action == 'post')
         {
 
             $fieldarr = explode(';', $dede_fields);
+      	  
             if(is_array($fieldarr))
             {
                 foreach($fieldarr as $field)
