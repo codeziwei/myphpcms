@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -7,32 +7,32 @@
     <link href="/templets/myweb/css/index.css" rel="stylesheet" type="text/css" />
     <link href="/templets/myweb/css/style.css" rel="stylesheet" type="text/css" />
 </head>
-
 <body>
-    {dede:include filename="head.htm"/}	
+    {dede:include filename="head.htm"/}
     <div class="wrapper">
-        {dede:include filename="product_left.htm"/}	
+        <div class="main_left">{dede:include filename="position_category.htm"/}{dede:include filename="product_hot.htm"/}{dede:include filename="product_commend.htm"/}</div>
         <div class="main_right">
             <div class="mod">
                 <!--大分类下按小分类显示内容 begin-->
                 {dede:channelartlist}
                 <div class="mod">
-                    <div class="title"><strong><a href="{dede:field name='typeurl'/}">{dede:field name='typename'/}</a></strong> <a class="more" href="{dede:field name='typeurl'/}">更多...</a></div>
+                    <div class="title">
+                        <strong><a href="{dede:field name='typeurl'/}">{dede:field name='typename'/}</a></strong>
+                        <a class="more" href="{dede:field name='typeurl'/}">更多...</a></div>
                     <div class="mod_con">
                         <ul class="list_item">
-                            {dede:arclist titlelen='42' row='10'}    
-                             <li><a href="[field:arcurl /]" class="pic">
-                                 <img src="[field:litpic/]" alt="[field:title function='html2text(@me)'/]" /><span class="countdown">[field:title /]</span></a>
-                             </li>
+                            {dede:arclist titlelen='42' row='10'}
+                            <li><a href="[field:arcurl /]" class="pic">
+                                <img src="[field:litpic/]" alt="[field:title function='html2text(@me)'/]" /><span
+                                    class="countdown">[field:title /]</span></a> </li>
                             {/dede:arclist}
                         </ul>
                     </div>
                 </div>
                 {/dede:channelartlist}
                 <!--每个小分类内容 end-->
-                 <!--{dede:global name=itemindex runphp="yes"}if(@me%2==0) @me =" <li class='item  cur'> "; else @me = " <li class='item'> "; {/dede:global}-->
+                <!--{dede:global name=itemindex runphp="yes"}if(@me%2==0) @me =" <li class='item  cur'> "; else @me = " <li class='item'> "; {/dede:global}-->
             </div>
-            
         </div>
     </div>
     {dede:include filename="footer.htm"/}

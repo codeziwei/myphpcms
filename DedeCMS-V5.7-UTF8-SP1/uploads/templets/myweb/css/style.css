@@ -48,10 +48,10 @@
 .pro_list li .rightinfo .pre { font-size:14px; line-height:25px; margin-top:5px;}
 /* page */
 .page_div { clear:both; margin: 10px 0; text-align: center;}
-.page { display: inline-block; height:20px; line-height:20px;}
+.page { height:20px; line-height:20px;}
 .page span { font-weight:bold;}
-.page a, .page .page_cur { background-color:#ffffff; border: 1px solid #898989;	color: #03539e; float: left; font-family: Arial; margin-right: 8px; min-width: 10px; padding: 0 5px; text-align: center; vertical-align: middle; white-space: nowrap;}
-.page .page_cur { background-color:transparent; border: 0;}
+.page a, .page .thisclass { background-color:#ffffff; border: 1px solid #898989;	color: #03539e; float: left; font-family: Arial; margin-right: 8px; min-width: 10px; padding: 0 5px; text-align: center; vertical-align: middle; white-space: nowrap;}
+.page .thisclass { background-color:transparent; border: 0;}
 .page .dis { background-color:transparent; border: 0; color:#555555;}
 /* Detail */
 .det_img { border:1px solid #959595; display:inline; float:left; margin:0 0 0 5px; height:275px; text-align:center; width:345px;}

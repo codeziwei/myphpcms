@@ -1,4 +1,4 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset={dede:global.cfg_soft_lang/}" />
@@ -7,6 +7,17 @@
 <meta name="description" content="{dede:field name='description' function='html2text(@me)'/}" />
 <link href="{dede:global.cfg_templets_skin/}/css/common.css" rel="stylesheet" media="screen" type="text/css" />
 <link href="{dede:global.cfg_templets_skin/}/css/style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="{dede:global.cfg_templets_skin/}/js/jquery-1.9.1.min.js "></script>
+<script type="text/javascript">
+         $(document).ready(function () {
+             $(".pos_con  li ").removeClass("cur");
+             $(".pos_con  li a").each(function () {
+                 if ($(this).text() == "{dede:field.typename/}") {
+                     $(this).parent().addClass("cur");
+                 }
+             })
+         });
+    </script>
 </head>
 <body class="articlelist">
 {dede:include filename="head.htm"/}
@@ -86,11 +97,11 @@
                   <div class="artinfo"><span>时间：{dede:field.pubdate function="MyDate('Y-m-d H:i',@me)"/}</span>　<span>来源：{dede:field.source/}</span>　<span>作者：{dede:field.writer/}</span></div>
 <div>
       {dede:field.body/}
-      {dede:field.vote/}
       (责任编辑：{dede:adminname/})
-</div>
 <br>
 {dede:prenext function="str_replace('   下一篇：','<'.'br'.' />下一篇：',@me)"/}
+</div>
+
  </div>
     </div>
 </div>

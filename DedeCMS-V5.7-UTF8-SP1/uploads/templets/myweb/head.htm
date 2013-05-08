@@ -2,9 +2,8 @@
     <div class="top_bar_wrap">
         <span class="fl">欢迎来到北京雅迪尔服装有限公司 !</span>
         <div class="top_menu">
-            <a href="#">[登录]</a>
-            <a href="#">[注册]</a>
-            <a href="/a/lianxiwomen/">联系我们</a>
+            <a title="首页" href="/">首页</a>
+                <a title="联系我们"  href="/a/lianxiwomen/">联系我们</a>
         </div>
     </div>
 </div>
@@ -13,12 +12,25 @@
     <div class="header_wrap">
 	    <h1><a href="#"></a></h1>
 		<div class="main_search">
-		    <div class="form"><input class="text" name="" type="text" /><input type="button" class="button" value="搜 索" /></div>
-			<div class="hotwords"><strong>热门搜索：</strong><a href="#">短袖</a><a href="#">套装</a><a href="#">校服</a><a href="#">工作服</a></div>
+<form  name="formsearch" action="{dede:global.cfg_cmsurl/}/plus/search.php">
+		    <div class="form">
+             <input type="hidden" name="kwtype" value="0" />
+<input type="hidden" name="searchtype" value="title" />
+            <input class="text"  name="q" type="text"   id="search-keyword" value="在这里搜索..." onfocus="if(this.value=='在这里搜索...'){this.value='';}"  onblur="if(this.value==''){this.value='在这里搜索...';}" />
+            <input type="submit" class="button" value="搜 索" /></div>
+</form>
+			<div class="hotwords"><strong>热门搜索：</strong><a href="javascript:searchkey('短袖');">短袖</a><a href="javascript:searchkey('套装')">套装</a>
+            <a href="javascript:searchkey('校服');">校服</a><a href="javascript:searchkey('工作服');">工作服</a></div>
+</div>
 		</div>
 	</div>
-</div>
-
+<script type="text/javascript">
+    function searchkey(k) {
+        if (k == "") return;
+        document.getElementById("search-keyword").value = k;
+        formsearch.submit();
+    }
+</script>
 <div class="nav wrapper">
     <b class="nav_left_side"></b>
     <b class="nav_right_side"></b>
@@ -56,6 +68,5 @@
      </dl>
      {/dede:channelartlist}
     </div>
-
 </div>
 <div class="adspace wrapper"><img src="{dede:global.cfg_templets_skin/}/images/pic.png" width="1000" height="120" /></div>

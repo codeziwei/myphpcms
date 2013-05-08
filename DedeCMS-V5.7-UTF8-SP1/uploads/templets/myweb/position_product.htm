@@ -1,7 +1,10 @@
 ﻿<!--产品所在位置导航-->
-<div class="title">您现在的位置：</div><div class="pos_con menu"><ul>
- {dede:channel type='top' row='10' currentstyle="<li class='cur'><a href='~typelink~' ~rel~><span>~typename~</span></a></li>"}
+<div class="title">您现在的位置ces：</div><div class="pos_con menu"><ul>
+<!-- {dede:channel type='top' row='10' currentstyle="<li class='cur'><a href='~typelink~' ~rel~><span>~typename~</span></a></li>"}
       	<li><a href='[field:typeurl/]' [field:rel/]><span>[field:typename/]</span></a></li>
- {/dede:channel}
+ {/dede:channel}-->
+  {dede:sql sql="SELECT * FROM `dede_arctype` WHERE id=~reid~ LIMIT 10"} [field:typename/]
+  {/dede:sql}
+
 </ul>
 </div>

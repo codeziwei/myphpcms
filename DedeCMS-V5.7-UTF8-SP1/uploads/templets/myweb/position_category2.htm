@@ -1,9 +1,25 @@
-﻿<!--小类所在位置导航-->
-<div class="pos_con">
-    <div class="name">
-        {dede:type} <a href="[field:typelink /]">[field:typename /]</a> {/dede:type}</div>
-    <div class="item">
-        {dede:channel type='self'} <a class="more" href="[field:typeurl/]">[field:name='typename'/]</a>
-        {/dede:channel}
+<!--小类所在位置导航-->
+<div class="position">
+    <div class="title">
+        您现在的位置：</div>
+    <div class="pos_con">
+        <div class="name">
+            {dede:sql sql="SELECT * FROM `dede_arctype` WHERE id=~reid~ LIMIT 1"} [field:typename/]
+            {/dede:sql}
+        </div>
+        <div class="item">
+            <!--class="cur"-->
+            {dede:channel type='self'} <a href='[field:typelink/]'>[field:typename/]</a> {/dede:channel}
+        </div>
     </div>
 </div>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $(".position>.pos_con >.item a").removeClass("cur");
+        $(".position>.pos_con >.item a").each(function () {
+            if ($(this).text() == "{dede:field.typename/}") {
+                $(this).addClass("cur");
+            }
+        })
+    });
+</script>

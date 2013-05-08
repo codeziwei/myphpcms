@@ -1,0 +1,24 @@
+/* 表单列表布局 */
+.form_box { padding:20px 50px;}
+.form_div { color:#252525; position:relative;}
+.form_div p { color:#555555; font-size:14px; margin: 20px 0;}
+.form_div .form_row { clear:both; line-height:28px; overflow: hidden; position: relative; zoom:1;}
+.form_row dt { float: left; font-size:18px; padding:10px 0; padding-right: 10px; text-align: right; vertical-align: middle; width: 100px;}
+.form_row dd { margin-left:115px; font-size:16px; padding:10px 0;}
+.form_row dd a.underline { text-decoration:underline;}
+.form_row dd.btn { padding-top:30px;}
+.form_div .tip { font-size: 12px;}
+.form_div .red { color:#b10317; font-size: 14px;}
+.form_row dd.btn .tip { font-size: 14px; margin-left:50px;}
+.radio { color: #252525; cursor: pointer; display: inline-block; height: 20px; line-height: 18px; margin-right:20px; padding-left: 25px; position: relative;}
+.radio:hover { color: #555555;}
+.radio .icon_radio, .checked .icon_radio{ background-image:url(../images/icon.png);}
+.radio .icon_radio { background-position: 0 -90px; cursor: pointer; display: inline-block; font-size: 0; height: 20px; left: 0; line-height: 0; overflow: hidden;  position: absolute; top: 0; vertical-align: middle; width: 20px;}
+.checked .icon_radio{ background-position: 0 -65px; margin-top:0; height: 20px; width: 20px;}
+/* input */
+.text_input, .text_textarea { background-color:#ffffff; border:1px solid #c2c2c2; display:inline-block; font-family:Tahoma; height:20px; line-height:20px; padding:2px 5px; width:280px;}
+.text_textarea { color:#898989; height:150px; line-height:16px; width:500px;}
+.input_s { width:130px;}
+.btn_login { background:url(../images/icon_btn.png) 0 -175px no-repeat; border:none; cursor:pointer; height:32px; width:125px;}
+.btn_regist { background:url(../images/icon_btn.png) 0 -210px no-repeat; border:none; cursor:pointer; height:32px; width:125px;}
+.btn_tijiao { background:url(../images/icon_btn.png) 0 -245px no-repeat; border:none; cursor:pointer; height:32px; width:125px;}

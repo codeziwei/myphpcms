@@ -1,0 +1,21 @@
+<div class="mod">
+    <div class="title">
+        <strong>推荐产品</strong></div>
+    <div class="mod_con">
+        <!--推荐 begin-->
+        {dede:arclist row=10 titlelen=42 flag=c}
+        <dl class="good_list">
+            <dt><a href="#">
+                <img src="[field:litpic/]" width="115" height="70" /></a></dt>
+            <dd>
+                <a class="name" href="[field:arcurl/]">[field:title/]</a></dd>
+            <dd>
+                <a class="rate" href="#"><s></s>好评： 152</a></dd>
+            <dd>
+                <a class="popularity" href="#"><s></s>人气：<script src="[field:phpurl/]/count.php?view=yes&aid=[field:id/]&mid=[field:mid/]"
+                    type='text/javascript' language="javascript"></script></a></dd>
+        </dl>
+        {/dede:arclist}
+        <!--推荐 end-->
+    </div>
+</div>

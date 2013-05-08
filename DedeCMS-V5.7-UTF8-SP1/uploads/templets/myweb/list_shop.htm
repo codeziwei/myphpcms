@@ -6,11 +6,15 @@
     <link href="/templets/myweb/css/common.css" rel="stylesheet" type="text/css" />
     <link href="/templets/myweb/css/index.css" rel="stylesheet" type="text/css" />
     <link href="/templets/myweb/css/style.css" rel="stylesheet" type="text/css" />
+    <script language="javascript" type="text/javascript" src="{dede:global.cfg_templets_skin/}/js/jquery-1.9.1.min.js"></script>
 </head>
 <body>
     {dede:include filename="head.htm"/}
     <div class="wrapper">
-        {dede:include filename="product_left.htm"/}
+        <div class="main_left">
+            {dede:include filename="position_category2.htm"/} {dede:include filename="product_hot.htm"/}
+            {dede:include filename="product_commend.htm"/}
+        </div>
         <div class="main_right">
             <div class="mod">
                 <div class="title">
@@ -39,8 +43,8 @@
                     </ul>
                     <div class="page_div">
                         <div class="page">
-                           {dede:pagelist listitem="info,index,end,pre,next,pageno,option" listsize="5"/}
-                           <!--
+                            {dede:pagelist listitem="info,index,end,pre,next,pageno,option" listsize="5"/}
+                            <!--
                            TODO：分页样式
                             <a class="dis" href="#">首页</a> <span class="page_cur">1</span> <a href="#"><span>2</span></a>
                             <a href="#"><span>3</span></a> <a href="#"><span>4</span></a> <a href="#"><span>5</span></a>

@@ -6,15 +6,15 @@
     <link href="/templets/myweb/css/common.css" rel="stylesheet" type="text/css" />
     <link href="/templets/myweb/css/index.css" rel="stylesheet" type="text/css" />
     <link href="/templets/myweb/css/style.css" rel="stylesheet" type="text/css" />
+    <script language="javascript" type="text/javascript" src="/templets/myweb/js/jquery-1.9.1.min.js"></script>
 </head>
 <body>
     <div class="top_bar">
     <div class="top_bar_wrap">
         <span class="fl">欢迎来到北京雅迪尔服装有限公司 !</span>
         <div class="top_menu">
-            <a href="#">[登录]</a>
-            <a href="#">[注册]</a>
-            <a href="/a/lianxiwomen/">联系我们</a>
+            <a title="首页" href="/">首页</a>
+                <a title="联系我们"  href="/a/lianxiwomen/">联系我们</a>
         </div>
     </div>
 </div>
@@ -55,7 +55,7 @@
       	
       	<a href='/a/gongsidongtai/' >公司动态</a>
       	
-      	<a href='/a/hangyezixun/' >行业资讯</a>
+      	<a href='/a/hangyezixun/' >行业新闻</a>
       	
       	<a href='/a/fuzhuangdapei/' >服装搭配</a>
       	
@@ -68,6 +68,8 @@
       	<a href='/a/bangzhuzhongxin/'  rel='dropmenu22'>服务中心</a>
       	
       	<a href='/a/category/'  rel='dropmenu10'>产品类型</a>
+      	
+      	<a href='http://localhost:8091/plus/guestbook.php' >在线留言</a>
       	-->    </div>
 </div>
 
@@ -133,80 +135,66 @@
         <dd>
      </dl>
     </div>
-
 </div>
 <div class="adspace wrapper"><img src="/templets/myweb/images/pic.png" width="1000" height="120" /></div>
     <div class="wrapper">
-        ﻿<div class="main_left">
-    <div class="position">
-        <div class="title">
-            您现在的位置：</div>
-        <div class="pos_con">
-            <div class="name">
-                西<br />
-                服<br />
-                正<br />
-                装</div>
-            <div class="item">
-                <a href="#">正装西服</a> <a href="#">休闲西服</a> <a href="#">礼服</a> <a href="#">西裤</a>
-                <a class="cur" href="#">马甲</a> <a href="#">领带</a> <a href="#">领结</a> <a href="#">方巾</a>
-                <a href="#">皮带</a> <a href="#">皮鞋</a> <a href="#">袖扣</a></div>
+        <div class="main_left">
+            <!--小类所在位置导航-->
+<div class="position">
+    <div class="title">
+        您现在的位置：</div>
+    <div class="pos_con">
+        <div class="name">
+            西服套装
         </div>
-    </div>
-    <div class="mod">
-        <div class="title">
-            <em class="hot"></em><strong>热门产品</strong></div>
-        <div class="mod_con">
-            <!--最热 begin-->
-            <dl class="good_list">
-                <dt><a href="#">
-                    <img src="/uploads/demo/xiuxian.png" width="115" height="70" /></a></dt>
-                <dd>
-                    <a class="name" href="/a/category/xifu/xiuxianxifu/2013/0501/9.html">休闲西服2</a></dd>
-                <dd>
-                    <a class="rate" href="#"><s></s>好评： 152</a></dd>
-                <dd>
-                    <a class="popularity" href="#"><s></s>人气：<script src="/plus/count.php?view=yes&aid=9&mid=1" type='text/javascript' language="javascript"></script></a></dd>
-            </dl>
-
-            <!--最热 end-->
-        </div>
-    </div>
-    <div class="mod">
-        <div class="title">
-            <strong>推荐产品</strong></div>
-        <div class="mod_con">
-            <!--推荐 begin-->
-            
-            <!--推荐 end-->
-
-        </div>
-    </div>
-    <div class="mod">
-        <div class="title">
-            <strong>西服咨询</strong><a class="more" href="#">更多</a></div>
-        <div class="mod_con">
-            <ul class="imgtxt">
-                <li class="imgArea"><a href="#">
-                    <img src="images/imgarea.png" width="115" height="70" /></a> </li>
-                <li class="txtArea">
-                    <p>
-                        北京的冬天似乎比去年来的要晚些，但是丝毫不影响北京市服装市场 <a href="#">[详细]</a></p>
-                </li>
-            </ul>
-            <ul class="mod_list">
-                <li><a href="#">西服品牌排名_认识西服从品牌开始</a></li>
-                <li><a href="#">西服品牌排名_认识西服从品牌开始</a></li>
-                <li><a href="#">西服品牌排名_认识西服从品牌开始</a></li>
-                <li><a href="#">西服品牌排名_认识西服从品牌开始</a></li>
-                <li><a href="#">西服品牌排名_认识西服从品牌开始</a></li>
-                <li><a href="#">西服品牌排名_认识西服从品牌开始</a></li>
-                <li><a href="#">西服品牌排名_认识西服从品牌开始</a></li>
-            </ul>
+        <div class="item">
+            <!--class="cur"-->
+             <a href='/a/category/xifu/zhengzhuangxifu/'>正装西服</a>  <a href='/a/category/xifu/xiuxianxifu/'>休闲西服</a>  <a href='/a/category/xifu/zhengzhuangchenshan/'>正装衬衫</a> 
         </div>
     </div>
 </div>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $(".position>.pos_con >.item a").removeClass("cur");
+        $(".position>.pos_con >.item a").each(function () {
+            if ($(this).text() == "休闲西服") {
+                $(this).addClass("cur");
+            }
+        })
+    });
+</script>
+ <div class="mod">
+    <div class="title">
+        <em class="hot"></em><strong>热门产品</strong></div>
+    <div class="mod_con">
+        <!--最热 begin-->
+        <dl class="good_list">
+            <dt><a href="#">
+                <img src="/uploads/demo/xiuxian.png" width="115" height="70" /></a></dt>
+            <dd>
+                <a class="name" href="/a/category/xifu/xiuxianxifu/2013/0501/9.html">休闲西服2</a></dd>
+            <dd>
+                <a class="rate" href="#"><s></s>好评： 152</a></dd>
+            <dd>
+                <a class="popularity" href="#"><s></s>人气：<script src="/plus/count.php?view=yes&aid=9&mid=1"
+                    type='text/javascript' language="javascript"></script></a></dd>
+        </dl>
 
+        <!--最热 end-->
+    </div>
+</div>
+
+            <div class="mod">
+    <div class="title">
+        <strong>推荐产品</strong></div>
+    <div class="mod_con">
+        <!--推荐 begin-->
+        
+        <!--推荐 end-->
+    </div>
+</div>
+
+        </div>
         <div class="main_right">
             <div class="mod">
                 <div class="title">
@@ -222,7 +210,7 @@
                                 <p class="tit">
                                     <a href="/a/category/xifu/xiuxianxifu/2013/0501/9.html">休闲西服2</a></p>
                                 <p class="action">
-                                    <a class="rate" href="#"><s></s>好评： 0</a><a class="popularity" href="#"><s></s>人气：188</a></p>
+                                    <a class="rate" href="#"><s></s>好评： 0</a><a class="popularity" href="#"><s></s>人气：198</a></p>
                                 <p>
                                     价格：500元</p>
                                 <p class="pre">
@@ -233,9 +221,9 @@
                     </ul>
                     <div class="page_div">
                         <div class="page">
-                           <li><span class="pageinfo">共 <strong>1</strong>页<strong>1</strong>条记录</span></li>
+                            <li><span class="pageinfo">共 <strong>1</strong>页<strong>1</strong>条记录</span></li>
 
-                           <!--
+                            <!--
                            TODO：分页样式
                             <a class="dis" href="#">首页</a> <span class="page_cur">1</span> <a href="#"><span>2</span></a>
                             <a href="#"><span>3</span></a> <a href="#"><span>4</span></a> <a href="#"><span>5</span></a>
@@ -320,9 +308,8 @@
 
     </p>
 
-    <p>北京雅迪尔服饰有限责任公司</p>
+    <p>北京雅迪尔服饰有限责任公司  版权所有 ©2013 All rights reserved   </p>
 
 </div>
-
 </body>
 </html>
