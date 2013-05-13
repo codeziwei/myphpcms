@@ -11,7 +11,7 @@ $typeArr[10] = '产品类型';
 $typeArr[11] = '西服套装';
 $typeArr[12] = '职业工装';
 $typeArr[13] = '针织休闲';
-$typeArr[14] = '户外外运动';
+$typeArr[14] = '户外运动';
 $typeArr[15] = '正装西服';
 $typeArr[16] = '休闲西服';
 $typeArr[17] = '正装衬衫';
@@ -34,4 +34,8 @@ $typeArr[33] = '意见投诉';
 $typeArr[34] = '法律声明';
 $typeArr[35] = '在线客服';
 $typeArr[36] = '在线留言';
+$typeArr[37] = '针织衫';
+$typeArr[38] = 'POLO衫';
+$typeArr[39] = '翻领T恤衫';
+$typeArr[40] = '情侣衫';
 ?>
