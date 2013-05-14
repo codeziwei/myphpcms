@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 /**
  * @version        $Id: edit.inc.php 1 10:06 2010-11-10 tianya $
  * @package        DedeCMS.Site
@@ -53,7 +53,7 @@ else if($job=='editok')
 if($g_isadmin)
 {
     $row = $dsql->GetOne("SELECT * FROM `#@__guestbook` WHERE id='$id'");
-    require_once(DEDETEMPLATE.'/plus/guestbook-admin.htm');
+    require_once(DEDETEMPLATE.'/myweb/guestbook-admin.htm');
 }
 else
 {

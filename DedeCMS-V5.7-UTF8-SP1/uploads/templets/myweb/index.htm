@@ -6,7 +6,7 @@
 
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
-    <title>首页</title>
+    <title>雅迪儿制衣网</title>
 
     <link href="{dede:global.cfg_templets_skin/}/css/common.css" rel="stylesheet" type="text/css" />
 
@@ -21,7 +21,7 @@
             $("#div_"+$(this).attr("id")).show();
         });
     });
-	
+    
 
     -->
     </script>
@@ -30,7 +30,7 @@
 
 
 <body>
-    {dede:include filename="head.htm"/}	
+    {dede:include filename="head.htm"/} 
 
     <div class="wrapper">
 
@@ -44,12 +44,12 @@
                 </li>
 
                 <li class="box2">
-                    <p>量身制作，全责式定制服务，前沿设计理念。面料精选、做工精湛、质量...</p>
+                    <p>产家直销 价格公道 集团定制更优惠。集合国内顶级设计资源，联合国内知名...</p>
                     <p class="right"><a class="a_blue" href="/a/youshi/">详细>></a></p>
                 </li>
 
                 <li class="box3">
-                    <p>量身制作，全责式定制服务，前沿设计理念。面料精选、做工精湛、质量...</p>
+                    <p>我们不保证价格最低，只保证同等价格下的质量最优，服务最佳，终身保修...</p>
                     <p class="right"><a class="a_blue" href="/a/chengnuo">详细>></a></p>
                 </li>
 
@@ -141,40 +141,21 @@
 
             <div class="mod s1">
 
-                <div class="title"><strong>供应信息</strong> <a class="more" href="#">更多</a></div>
+ <!--行业信息 begin-->
+                  {dede:type typeid='21'}
+                        <div class="title"><strong>[field:typename/]</strong> <a class="more" href='[field:typelink/]'>更多</a></div>
+                {/dede:type}
 
                 <div class="mod_con">
+                    <ul class="mod_list">                                                        
+        {dede:arclist row=6 titlelen=42 typeid='21'}
 
-                    <ul class="imgtxt">
-
-                        <li class="imgArea"><a href="#">
-                            <img src="images/imgarea.png" width="115" height="70" /></a></li>
-
-                        <li class="txtArea">
-
-                            <p>北京的冬天似乎比去年来的要晚些，但是丝毫不影响北京市服装市场 <a href="#">[详细]</a></p>
-
-                        </li>
-
+           
+           <li> <a class="name" href="[field:arcurl/]">[field:title/]</a></li>
+        {/dede:arclist}    
                     </ul>
-
-                    <ul class="mod_list">
-
-                        <li><a href="#">西服品牌排名_认识西服从品牌开始</a></li>
-
-                        <li><a href="#">西服品牌排名_认识西服从品牌开始</a></li>
-
-                        <li><a href="#">西服品牌排名_认识西服从品牌开始</a></li>
-
-                        <li><a href="#">西服品牌排名_认识西服从品牌开始</a></li>
-
-                        <li><a href="#">西服品牌排名_认识西服从品牌开始</a></li>
-
-                        <li><a href="#">西服品牌排名_认识西服从品牌开始</a></li>
-
-                    </ul>
-
                 </div>
+                  <!--行业信息 end-->
 
             </div>
 
@@ -226,52 +207,19 @@
 
             <div class="mod s2">
 
-                <div class="title"><strong>供应信息</strong> <a class="more" href="#">更多</a></div>
+                 <!--公司动态 begin-->
+                  {dede:type typeid='9'}
+                        <div class="title"><strong>[field:typename/]</strong> <a class="more" href='[field:typelink/]'>更多</a></div>
+                {/dede:type}
 
                 <div class="mod_con">
-
-                    <ul class="imgtxt">
-
-                        <li class="imgArea"><a href="#">
-                            <img src="images/imgarea.png" width="115" height="70" /></a> </li>
-
-                        <li class="txtArea">
-
-                            <p>北京的冬天似乎比去年来的要晚些，但是丝毫不影响北京市服装市场 <a href="#">[详细]</a></p>
-
-                        </li>
-
+                    <ul class="mod_list">                                                        
+        {dede:arclist row=6 titlelen=42 typeid='9'}
+           <li> <a class="name" href="[field:arcurl/]">[field:title/]</a></li>
+        {/dede:arclist}    
                     </ul>
-
-                    <ul class="mod_list">
-
-                        <li><a href="#">西服品牌排名_认识西服从品牌开始</a></li>
-
-                        <li><a href="#">西服品牌排名_认识西服从品牌开始</a></li>
-
-                        <li><a href="#">西服品牌排名_认识西服从品牌开始</a></li>
-
-                        <li><a href="#">西服品牌排名_认识西服从品牌开始</a></li>
-
-                        <li><a href="#">西服品牌排名_认识西服从品牌开始</a></li>
-
-                        <li><a href="#">西服品牌排名_认识西服从品牌开始</a></li>
-
-                        <li><a href="#">西服品牌排名_认识西服从品牌开始</a></li>
-
-                        <li><a href="#">西服品牌排名_认识西服从品牌开始</a></li>
-
-                        <li><a href="#">西服品牌排名_认识西服从品牌开始</a></li>
-
-                        <li><a href="#">西服品牌排名_认识西服从品牌开始</a></li>
-
-                        <li><a href="#">西服品牌排名_认识西服从品牌开始</a></li>
-
-                        <li><a href="#">西服品牌排名_认识西服从品牌开始</a></li>
-
-                    </ul>
-
                 </div>
+                  <!--公司动态 end-->
 
             </div>
 
@@ -348,40 +296,19 @@
 
             <div class="mod s1">
 
-                <div class="title"><strong>供应信息</strong> <a class="more" href="#">更多</a></div>
+                                 <!--面料知识 begin-->
+                  {dede:type typeid='20'}
+                        <div class="title"><strong>[field:typename/]</strong> <a class="more" href='[field:typelink/]'>更多</a></div>
+                {/dede:type}
 
                 <div class="mod_con">
-
-                    <ul class="imgtxt">
-
-                        <li class="imgArea"><a href="#">
-                            <img src="images/imgarea.png" width="115" height="70" /></a> </li>
-
-                        <li class="txtArea">
-
-                            <p>北京的冬天似乎比去年来的要晚些，但是丝毫不影响北京市服装市场 <a href="#">[详细]</a></p>
-
-                        </li>
-
+                    <ul class="mod_list">                                                        
+        {dede:arclist row=6 titlelen=42 typeid='20'}
+           <li> <a class="name" href="[field:arcurl/]">[field:title/]</a></li>
+        {/dede:arclist}    
                     </ul>
-
-                    <ul class="mod_list">
-
-                        <li><a href="#">西服品牌排名_认识西服从品牌开始</a></li>
-
-                        <li><a href="#">西服品牌排名_认识西服从品牌开始</a></li>
-
-                        <li><a href="#">西服品牌排名_认识西服从品牌开始</a></li>
-
-                        <li><a href="#">西服品牌排名_认识西服从品牌开始</a></li>
-
-                        <li><a href="#">西服品牌排名_认识西服从品牌开始</a></li>
-
-                        <li><a href="#">西服品牌排名_认识西服从品牌开始</a></li>
-
-                    </ul>
-
                 </div>
+                  <!--面料知识 end-->
 
             </div>
 
@@ -596,7 +523,7 @@
 
     </div>
 
- {dede:include filename="footer.htm"/}	
+ {dede:include filename="footer.htm"/}  
     
 
 </body>

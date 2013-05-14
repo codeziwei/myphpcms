@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 /**
  *
  * 留言板
@@ -55,8 +55,8 @@ else if($action=='save')
         $msg = "<div class=\\'rebox\\'>".addslashes($row['msg'])."</div>\n".$msg;
     }
 
-    $query = "INSERT INTO `#@__guestbook`(title,tid,mid,uname,email,homepage,qq,face,msg,ip,dtime,ischeck)
-                  VALUES ('$title','$tid','{$g_mid}','$uname','$email','$homepage','$qq','$img','$msg','$ip','$dtime','$needCheck'); ";
+    $query = "INSERT INTO `#@__guestbook`(title,tid,mid,uname,email,homepage,qq,face,msg,ip,dtime,ischeck,my_phone)
+                  VALUES ('$title','$tid','{$g_mid}','$uname','$email','$homepage','$qq','$img','$msg','$ip','$dtime','$needCheck','$my_phone'); ";
     $dsql->ExecuteNoneQuery($query);
     $gid = $dsql->GetLastID();
     if($needCheck==1)
@@ -89,7 +89,7 @@ else
     $dlist = new DataListCP();
     $dlist->pageSize = 10;
     $dlist->SetParameter('gotopagerank',$gotopagerank);
-    $dlist->SetTemplate(DEDETEMPLATE.'/plus/guestbook.htm');
+    $dlist->SetTemplate(DEDETEMPLATE.'/myweb/guestbook.htm');
     $dlist->SetSource($sql);
     $dlist->Display();
 }
